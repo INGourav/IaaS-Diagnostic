@@ -1,13 +1,17 @@
-# Paste Storage Account that you want to use for Diagnostic log collection
+#Paste Storage Account that you want to use for Diagnostic log collection
+#Need to Edit
 $storageAccountName= 'teststorage'
 
 #Paste Storage Account Resource Group Name
+#Need to Edit
 $storageAccountRG= 'test-storage-rg'
 
 #Paste Storage Account Location
+#Need to Edit
 $storageAccountLocation= 'Canada Central'
 
 #Paste VMs Resource Group for all you want to enable Memory Diagnostic
+#Need to Edit
 $VMRG= 'test-vm-rg'
 
 #Storing Storage Account Infomration into Variable that would be later on by the same script 
