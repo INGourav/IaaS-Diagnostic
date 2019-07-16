@@ -170,6 +170,10 @@ function Enable-WindowsDiagnosticsExtension($rsgName,$rsgLocation,$vmId,$vmName)
                                         "sampleRate": "PT60S"
                                     },
                                     {
+                                        "counterSpecifier": "\\Memory\\% Committed Bytes In Use",
+                                        "sampleRate": "PT60S"
+                                    },
+                                    {
                                         "counterSpecifier": "\\Memory\\Available Bytes",
                                         "sampleRate": "PT60S"
                                     },
