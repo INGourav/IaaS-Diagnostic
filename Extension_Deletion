@@ -11,5 +11,7 @@ $vmList = Get-Azurermvm -ResourceGroupName "RG-of-VMs"
         else {
             Write-Host " deleting extension on vm" $vm.Name
             Remove-AzureRmVMExtension -ResourceGroupName $vm.ResourceGroupName -VMName $vm.Name -Name 'Microsoft.Insights.VMDiagnosticsSettings' -force -verbose
+           #This line will remove newer version of extension which directly installed with the name IaaSDiagnostic, you can comment this if do not want to unistall so
+           Remove-AzureRmVMExtension -ResourceGroupName $vm.ResourceGroupName -VMName $vm.Name -Name 'IaaSDiagnostic' -force -verbose
         }
 }
