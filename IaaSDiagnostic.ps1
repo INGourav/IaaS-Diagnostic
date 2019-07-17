@@ -1001,3 +1001,6 @@ if($vmList){
 } else {
     Write-Host "no vms exist"
 }
+
+#Source of Script: - https://helpdesk.kaseya.com/hc/en-gb/articles/115002525972-How-To-Enable-Azure-Diagnostics-For-VMs-Using-PowerShell-Script-
+# Thanks to Christine Pando for creating this wonderful script, I have added counter for Memory and Customized it as per bulk requirement based on subscription 
