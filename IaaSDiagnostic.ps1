@@ -57,8 +57,8 @@ function Enable-LinuxDiagnosticsExtension($rsgName,$rsgLocation,$vmId,$vmName){
 
     Out-File -FilePath $settingsStringPath -Force -Encoding utf8 -InputObject $settingsString
     
-    $extensionPublisher = 'Microsoft.OSTCExtensions'
-    $extensionVersion = "2.3"
+    $extensionPublisher = 'Microsoft.Azure.Diagnostics'
+    $extensionVersion = "3.0"
     $privateCfg = '{
     "storageAccountName": "'+$storageName+'",
     "storageAccountKey": "'+$storageKey+'"
